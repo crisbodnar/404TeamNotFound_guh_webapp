@@ -5,7 +5,7 @@
  */
 
 var app = require('./app');
-var debug = require('debug')('404TeamNotFound_guh_webapp:server');
+var debug = require('debug')('2guys2balls:server');
 var http = require('http');
 
 /**
@@ -30,7 +30,7 @@ server.on('error', onError);
 server.on('listening', onListening);
 
 //Socket.IO
-var io = require('socket.io')(server);
+GLOBAL.io = require('socket.io')(server);
 
 /**
  * Normalize a port into a number, string, or false.

@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var frontRoutes = require('./routes/front');
+// var frontRoutes = require('./routes/front');
 var users = require('./routes/users');
 var api = require('./routes/api');
 
@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/front', frontRoutes);
+// app.use('/front', frontRoutes);
 app.use('/users', users);
 app.use('/api', api);
 

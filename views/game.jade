@@ -4,7 +4,7 @@ block content
 		div.jumbotron
 			div.row
 				div.col-md-12
-					p GameView
+					h2 Game Score Board
 			div.row
 				div.col-md-6
 					p#name1= name1
@@ -12,8 +12,10 @@ block content
 					p#name2= name2
 			div.row
 				div.col-md-6
-					p#score1 0
+					p#score1= score1
 				div.col-md-6
-					p#score2 0
+					p#score2= score2
+			div.row
+				p#invite.invitation-link
 	script(src='http://localhost:3000/socket.io/socket.io.js')
 	script(src='/js/socket.js')

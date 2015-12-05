@@ -7,6 +7,10 @@ a {
   color: #00B7FF;
 }
 
-p {
+h2,p {
 	text-align: center;
+}
+
+.invitation-link {
+	color: #73AD21;
 }

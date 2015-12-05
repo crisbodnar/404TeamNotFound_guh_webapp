@@ -9,5 +9,5 @@ socket.on('score',function(message)
 });
 
 var inviteUrl = window.location.href;
-inviteUrl += (inviteUrl.search("&keep=1") ? "" : "&keep=1");
+inviteUrl += (inviteUrl.search("&keep=1") != -1 ? "" : "&keep=1");
 $('p#invite').text('Invitation link: '+inviteUrl);

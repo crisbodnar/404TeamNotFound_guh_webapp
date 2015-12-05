@@ -88,17 +88,3 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
-
-var users = [];
-
-function addPlayer(uname, ballid){
-  var player = {
-    ball: ballid,
-    score: 0
-  };
-  users["uname"] = player;
-}
-
-function playerScore(uname){
-  users["uname"].score++;
-}

@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('./app');
 var debug = require('debug')('404TeamNotFound_guh_webapp:server');
 var http = require('http');
 

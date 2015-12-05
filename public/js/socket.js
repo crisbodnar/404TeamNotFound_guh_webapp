@@ -1,6 +1,6 @@
 var socket = io();
 
-socket.connect('http://localhost:3000');
+socket.connect('http://2guys2balls.azurewebsites.net');
 socket.on('score',function(message)
 {
 	console.log(message);

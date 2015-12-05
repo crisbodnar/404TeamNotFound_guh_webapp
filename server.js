@@ -30,11 +30,7 @@ server.on('error', onError);
 server.on('listening', onListening);
 
 //Socket.IO
-var io = require('socket.io')(server);
-io.on('connection',function()
-{
-  // console.log(users);
-});
+GLOBAL.io = require('socket.io')(server);
 
 /**
  * Normalize a port into a number, string, or false.

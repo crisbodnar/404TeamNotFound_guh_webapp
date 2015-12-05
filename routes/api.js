@@ -14,6 +14,7 @@ function playerScore(ballid){
   for (var index in users)
   	if(users[index].ballid == ballid){
   		users[index].score++;
+      io.emit('score',{uname : index, score : users[index].score});
   		break;
   	}
 }

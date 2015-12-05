@@ -6,4 +6,6 @@ router.get('/game', function(req, res, next) {
   res.render('game');
 });
 
+console.log(io);
+
 module.exports = router;

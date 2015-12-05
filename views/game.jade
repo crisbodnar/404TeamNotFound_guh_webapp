@@ -7,11 +7,13 @@ block content
 					p GameView
 			div.row
 				div.col-md-6
-					p Name1
+					p#name1 Name1
 				div.col-md-6
-					p Name2
+					p#name2 Name2
 			div.row
 				div.col-md-6
-					p 0
+					p#score1 0
 				div.col-md-6
-					p 1
+					p#score2 1
+	script(src='http://localhost:3000/socket.io/socket.io.js')
+	script(src='/js/socket.js')

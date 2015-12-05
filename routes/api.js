@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var users = [];
+GLOBAL.users = [];
 
 function addPlayer(uname, ballid){
   var player = {

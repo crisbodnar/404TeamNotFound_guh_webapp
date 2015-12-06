@@ -7,7 +7,7 @@ a {
   color: #00B7FF;
 }
 
-h2,p {
+h1,h2,p {
 	text-align: center;
 }
 
@@ -30,4 +30,10 @@ input {
 
 #plus-button {
 	margin-right: 5px;
+}
+
+ol {
+	font-size: 20px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 200;
 }

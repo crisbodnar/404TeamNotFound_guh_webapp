@@ -14,3 +14,20 @@ h2,p {
 .invitation-link {
 	color: #73AD21;
 }
+
+input {
+	margin-bottom: 10px;
+}
+
+.center {
+	width: 60%;
+	margin: auto;
+}
+
+.right {
+	float: right;
+}
+
+#plus-button {
+	margin-right: 5px;
+}

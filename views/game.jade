@@ -6,15 +6,13 @@ block content
 				div.col-md-12
 					h2 Game Score Board
 			div.row
-				div.col-md-6
-					p#name1= name1
-				div.col-md-6
-					p#name2= name2
+				each val, index in names
+					div(class=('col-md-'+width)) 
+						p(id = ("name"+(index+1)))= val
 			div.row
-				div.col-md-6
-					p#score1= score1
-				div.col-md-6
-					p#score2= score2
+				each val, index in scores
+					div(class=('col-md-'+width))
+						p(id = ("score"+(index+1)))= val
 			div.row
 				p#invite.invitation-link
 	script(src='http://localhost:3000/socket.io/socket.io.js')

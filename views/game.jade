@@ -1,0 +1,21 @@
+extends layout
+block content
+	div.container
+		div.jumbotron
+			div.row
+				div.col-md-12
+					h2 Game Score Board
+			div.row
+				div.col-md-6
+					p#name1= name1
+				div.col-md-6
+					p#name2= name2
+			div.row
+				div.col-md-6
+					p#score1= score1
+				div.col-md-6
+					p#score2= score2
+			div.row
+				p#invite.invitation-link
+	script(src='http://localhost:3000/socket.io/socket.io.js')
+	script(src='/js/socket.js')
